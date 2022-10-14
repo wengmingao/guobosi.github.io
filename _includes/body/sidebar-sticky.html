@@ -25,10 +25,9 @@
   }
 </style>
 
-<div class="autohide">
-<a style=" position:fixed;left:50px;top:320px;bottom: 200px;border-bottom:0px;opacity: 0.8;"class="sidebar-title" href="{{ '/' | relative_url }}"><h2 style="color:black;border-bottom:0px" class="hr-bottom">招生宣传:</h2></a>
-<p  style="font-size: 17px;text-align:left;position:fixed;left:50px;top:450px; bottom: 80px;color:black;white-space:normal; width:650px;opacity: 0.8">
-            <marquee><a style="color:black;opacity: 0.8"><b>欢迎校内外的本学科或跨学科优秀保研推免生或优秀考研生加入VGG小组!</b></a></marquee></p>
+<div class="autohide" style="position: fixed;margin-left: -750px;margin-bottom: -20px;">
+<a style="border-bottom:0px;opacity: 0.8;"class="sidebar-title" href="{{ '/' | relative_url }}"><h2 style="color:black;border-bottom:0px" class="hr-bottom">招生宣传:</h2></a>
+<marquee style="width: 350px;"><a style="color:black;opacity: 0.8"><b>欢迎校内外的本学科或跨学科优秀保研推免生或优秀考研生加入VGG小组!</b></a></marquee></p>
 
 </div>
 
@@ -54,7 +53,7 @@
 {% endif %}
 
 {% if related_posts.size > 0 %}
-<aside class="related mb4 autohide" role="complementary" style=" position:fixed;left:50px;top:460px; bottom: 115px;text-align:left;white-space:normal; width:650px;color:black;opacity: 0.8">
+<aside class="related" role="complementary" style="text-align:left;white-space:normal; width:350px;color:black;opacity: 0.8">
   <h2 style="border-bottom: aliceblue;color:black;opacity: 0.8"class="hr-bottom">Congratulations:</h2>
   <ul class="related-posts" style="color:black;opacity: 0.8" >
     {% for post in related_posts limit:3 %}
